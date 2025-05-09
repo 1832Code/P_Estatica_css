@@ -1,0 +1,249 @@
+@primary-color: #fff;
+@color-body: #ddd8d8;
+@secondary-color: #000;
+@orange-color: #ffba00;
+@griss-color: #222222;
+@griis-color-bajo: #777777;
+@purple-color: #828bb2;
+@mobile: ~"(max-width: 767px)";
+@tablet: ~"(min-width: 768px) and (max-width: 1023px)";
+@desktop: ~"(min-width: 1024px)";
+@bg-image: url("../P_02/Img/Section.jpg");
+:root {
+  --primary-color: @primary-color;
+  --secondary-color: @secondary-color;
+  --orange-color: @orange-color;
+  --griss-color: @griss-color;
+  --griis-color-bajo: @griis-color-bajo;
+  --purple-color: @purple-color;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main {
+  width: 100%;
+  background-image: @bg-image;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  @media @mobile {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.header {
+  width: 95%;
+  height: auto;
+  padding: 15px;
+  display: flex !important;
+  margin-top: 30px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: @primary-color;
+  color: @secondary-color;
+  border-radius: 15px;
+  box-shadow: 10px 15px 15px rgba(167, 164, 164, 0.2);
+  @media @mobile {
+    width: 100%;
+    height: auto;
+    margin-top: 0px;
+
+    .logo img {
+      display: none;
+    }
+    .nav-desktop {
+      display: none;
+    }
+    .btns {
+      display: none;
+    }
+    .moviles {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .navbar-brand {
+      width: 40%;
+      height: auto;
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      img {
+        width: 30%;
+        height: auto;
+      }
+    }
+    .navbar-toggler {
+      width: 70%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      background-color: @orange-color;
+      span {
+        width: 30%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+      }
+    }
+  }
+  @media @desktop {
+    .moviles {
+      display: none;
+    }
+  }
+
+  @media @desktop {
+    display: block;
+  }
+  .header__logo {
+    width: 30%;
+    height: auto;
+  }
+  .logo {
+    width: 15%;
+    display: flex;
+    align-items: center;
+    img {
+      .header__logo();
+    }
+  }
+  nav {
+    width: 70%;
+    height: auto;
+    display: flex;
+    justify-content: right;
+    ul {
+      display: flex;
+      justify-content: right;
+      align-items: center;
+      gap: 20px;
+      li {
+        list-style: none;
+        a {
+          text-decoration: none;
+          color: @secondary-color;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 0.8rem;
+        }
+        a:hover {
+          color: @orange-color;
+        }
+      }
+    }
+  }
+  div {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    figure {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      img {
+        width: 20px;
+        height: auto;
+      }
+    }
+  }
+}
+.container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 auto;
+  background-color: transparent;
+  @media @mobile {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .box {
+    width: 35%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding-left: 40px;
+    @media @mobile {
+      .box {
+        padding-left: 0px;
+      }
+    }
+    h1 {
+      font-family: "Montserrat", sans-serif;
+      font-size: 65px;
+      font-weight: bold;
+      color: @secondary-color;
+      text-align: left;
+      @media @mobile {
+        font-size: 30px;
+        text-align: center;
+      }
+    }
+    p {
+      font-size: 15px;
+      color: @griis-color-bajo;
+    }
+    .botones {
+      display: flex;
+      flex-direction: row;
+      gap: 15px;
+      justify-content: left;
+      align-items: center;
+      button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+        border-radius: 50%;
+        height: 60px;
+        font-size: 40px;
+        background: linear-gradient(
+          90deg,
+          @orange-color,
+          #ff6c00
+        ); /* Degradado naranja */
+      }
+    }
+  }
+  #im1 {
+    width: 65%;
+    height: auto;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    img {
+      width: 75%;
+      height: auto;
+      @media @mobile {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}

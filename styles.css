@@ -1,0 +1,245 @@
+:root {
+  --primary-color: #fff;
+  --secondary-color: #000;
+  --orange-color: #ffba00;
+  --griss-color: #222222;
+  --griis-color-bajo: #777777;
+  --purple-color: #828bb2;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main {
+  width: 100%;
+  background-image: url("../P_02/Img/Section.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 767px) {
+  main {
+    width: 100%;
+    height: auto;
+  }
+}
+.header {
+  width: 95%;
+  height: auto;
+  padding: 15px;
+  display: flex !important;
+  margin-top: 30px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  color: #000;
+  border-radius: 15px;
+  box-shadow: 10px 15px 15px rgba(167, 164, 164, 0.2);
+}
+@media (max-width: 767px) {
+  .header {
+    width: 100%;
+    height: auto;
+    margin-top: 0px;
+  }
+  .header .logo img {
+    display: none;
+  }
+  .header .nav-desktop {
+    display: none;
+  }
+  .header .btns {
+    display: none;
+  }
+  .header .moviles {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .header .navbar-brand {
+    width: 40%;
+    height: auto;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+  .header .navbar-brand img {
+    width: 30%;
+    height: auto;
+  }
+  .header .navbar-toggler {
+    width: 70%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: #ffba00;
+  }
+  .header .navbar-toggler span {
+    width: 30%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+  }
+}
+@media (min-width: 1024px) {
+  .header .moviles {
+    display: none;
+  }
+}
+@media (min-width: 1024px) {
+  .header {
+    display: block;
+  }
+}
+.header .header__logo {
+  width: 30%;
+  height: auto;
+}
+.header .logo {
+  width: 15%;
+  display: flex;
+  align-items: center;
+}
+.header .logo img {
+  width: 30%;
+  height: auto;
+}
+.header nav {
+  width: 70%;
+  height: auto;
+  display: flex;
+  justify-content: right;
+}
+.header nav ul {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 20px;
+}
+.header nav ul li {
+  list-style: none;
+}
+.header nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+}
+.header nav ul li a:hover {
+  color: #ffba00;
+}
+.header div {
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header div figure {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header div figure img {
+  width: 20px;
+  height: auto;
+}
+.container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 auto;
+  background-color: transparent;
+}
+@media (max-width: 767px) {
+  .container {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+.container .box {
+  width: 35%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  padding-left: 40px;
+}
+@media (max-width: 767px) {
+  .container .box .box {
+    padding-left: 0px;
+  }
+}
+.container .box h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 65px;
+  font-weight: bold;
+  color: #000;
+  text-align: left;
+}
+@media (max-width: 767px) {
+  .container .box h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+}
+.container .box p {
+  font-size: 15px;
+  color: #777777;
+}
+.container .box .botones {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  justify-content: left;
+  align-items: center;
+}
+.container .box .botones button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  height: 60px;
+  font-size: 40px;
+  background: linear-gradient(90deg, #ffba00, #ff6c00);
+  /* Degradado naranja */
+}
+.container #im1 {
+  width: 65%;
+  height: auto;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.container #im1 img {
+  width: 75%;
+  height: auto;
+}
+@media (max-width: 767px) {
+  .container #im1 img {
+    width: 100%;
+    height: auto;
+  }
+}
